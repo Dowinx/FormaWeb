@@ -193,7 +193,7 @@ section .header-text p {
   width: 80%;
   position: absolute;
   background: rgb(235, 235, 235);
-  bottom: 0;
+  bottom: -28px;
 }
 .contact .contact-container .list {
   width: 24%;
@@ -204,7 +204,6 @@ section .header-text p {
 }
 .contact .contact-container .list .info-p li {
   margin: 15px 0;
-  font-weight: 400;
 }
 .contact .contact-container .list .info-p li a {
   text-decoration: none;
@@ -222,15 +221,15 @@ section .header-text p {
 .contact .contact-container .list #network {
   margin: 20px 0 8px;
 }
-.contact .contact-container .list .footer-logos {
-  margin-bottom: 30px;
+.contact .contact-container .list .footer-logos i {
+  margin: 0 12px 30px 0;
 }
 .contact .contact-medias {
   display: flex;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 95%;
   padding: 60px 0 15px;
 }
 .contact .contact-medias .left-part {
@@ -239,6 +238,8 @@ section .header-text p {
 .contact .contact-medias .right-part {
   width: 70%;
   text-align: center;
+  display: flex;
+  justify-content: space-around;
 }
 
 footer {
@@ -253,6 +254,7 @@ footer h3 {
 }
 footer ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin: 0 auto;
+  max-width: 1000px;
 }/*# sourceMappingURL=style.css.map */
