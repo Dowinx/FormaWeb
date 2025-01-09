@@ -120,4 +120,139 @@ section .header-text p {
 .icon-part .icon-part-container button:hover {
   color: rgb(15, 15, 15);
   background-color: whitesmoke;
+}
+
+.news-part {
+  background: rgba(245, 245, 245, 0.8);
+  padding: 80px 0 45px;
+}
+.news-part .header-news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.news-part .header-news .left-part {
+  line-height: 30px;
+}
+.news-part .header-news .left-part h2 {
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.news-part .header-news .left-part p {
+  font-size: 0.9rem;
+}
+.news-part .header-news .right-part button {
+  border: 1px solid rgb(15, 15, 15);
+  background: transparent;
+  color: rgb(15, 15, 15);
+  padding: 10px 20px;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+.news-part .main-news .main-new-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1100px;
+  margin: 45px auto;
+}
+.news-part .main-news .main-new-container .new {
+  max-width: 23%;
+  position: relative;
+}
+.news-part .main-news .main-new-container h4 {
+  margin: 15px auto;
+}
+.news-part .main-news .main-new-container p {
+  font-size: 0.8rem;
+  margin-bottom: 45px;
+}
+.news-part .main-news .main-new-container a {
+  text-decoration: none;
+  color: rgb(95, 4, 170);
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  bottom: 0;
+  position: absolute;
+}
+
+.contact {
+  padding: 65px 0 20px;
+  margin: 0 auto;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.contact .contact-container .contact-list {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+.contact .contact-container .contact-list::after {
+  content: "";
+  height: 1px;
+  width: 80%;
+  position: absolute;
+  background: rgb(235, 235, 235);
+  bottom: 0;
+}
+.contact .contact-container .list {
+  width: 24%;
+}
+.contact .contact-container .list h5 {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+.contact .contact-container .list .info-p li {
+  margin: 15px 0;
+  font-weight: 400;
+}
+.contact .contact-container .list .info-p li a {
+  text-decoration: none;
+}
+.contact .contact-container .list p {
+  margin-bottom: 15px;
+  line-height: 22px;
+}
+.contact .contact-container .list a {
+  text-decoration: none;
+}
+.contact .contact-container .list h6 {
+  font-weight: bold;
+}
+.contact .contact-container .list #network {
+  margin: 20px 0 8px;
+}
+.contact .contact-container .list .footer-logos {
+  margin-bottom: 30px;
+}
+.contact .contact-medias {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 60px 0 15px;
+}
+.contact .contact-medias .left-part {
+  width: 30%;
+}
+.contact .contact-medias .right-part {
+  width: 70%;
+  text-align: center;
+}
+
+footer {
+  background-color: rgb(15, 15, 15);
+  padding: 25px;
+}
+footer h3 {
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: whitesmoke;
+  text-align: center;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
