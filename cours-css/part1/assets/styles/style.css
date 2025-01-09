@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+
+body {
+  /* 100% de la taille de l'ecran (viewport height) */
+  min-height: 100vh;
+  background: url(../img/butterfly.webp) center/cover;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+#title {
+  text-align: center;
+  color: purple;
+  font-size: 5vw;
+}
+
+main {
+  border: 2px solid cyan;
+  margin: 50px auto;
+  border-radius: 25px 25px 0 0;
+  box-shadow: 1px 2px 7px 8px #123d9f;
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.flexbox,
+.grid,
+.absolute {
+  border: 1px solid blue;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  min-height: 150px;
+}
+
+.flexbox ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flexbox li {
+  background: rgba(71, 243, 208, 0.94);
+  height: 60px;
+  width: 60px;
+  margin: 20px;
+  padding: 80px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.grid-logo img {
+  height: 190px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "i1 i2"
+    "ta ta"
+    "vi btn";
+}
+
+textarea {
+  grid-area: ta;
+  resize: none;
+  height: 40px;
+}
+
+#btn-submit {
+  grid-area: btn;
+  border-radius: 5px;
+  background: cyan;
+}
+
+input,
+textarea {
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.absolute {
+  position: relative;
+}
+
+#circle1 {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  background: blue;
+  border-radius: 50px;
+  top: -20px;
+  right: -20px;
+}
+
+#circle2 {
+  background: green;
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  border-radius: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 808px) {
+  .flexbox ul {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 652px) {
+  .grid-container {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 491px) {
+  form {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "i1"
+      "i2"
+      "ta"
+      "btn";
+  }
+}

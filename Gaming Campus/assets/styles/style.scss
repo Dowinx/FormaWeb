@@ -1,0 +1,152 @@
+$color1: whitesmoke;
+$color2: rgb(15,15,15);
+
+@mixin CentrerElts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat,sans-serif;
+    list-style: none; 
+}
+
+body {
+    min-height: 100vh;
+}
+
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    ul {
+        @include CentrerElts();
+        justify-content: space-between;
+        padding: 0 5px;
+    } 
+    
+    li {
+        padding: 20px 0;
+        border-top: 5px solid transparent;
+        font-weight: 900;
+        font-size: 0.9rem;
+    }
+
+    
+    li:first-child {
+        border-top: 5px solid rgb(95, 4, 170);
+    }
+
+    li:hover {
+        border-top: 5px solid rgb(95, 4, 170);
+
+    }
+
+    button {
+        border-radius: 50px;
+        padding: 8px 16px;
+        border: none;
+        cursor: pointer;
+        font-weight: 900;
+        background: rgba(128, 128, 128, 0.25);
+    }
+}
+
+header {
+
+    
+    .main-header {
+        @include CentrerElts();
+        flex-direction: column;
+        width: 100%;
+        background: url(../img/bg.jpg) center/cover;
+        padding: 60px;
+    }
+
+    h1 {
+        color: $color1;
+        margin: 30px 0 35px;;
+        font-size: 1.5rem;
+    }
+
+    button {
+        background-color: transparent;
+        color: $color1;
+        padding: 15px 30px;
+        border: 1px solid $color1;
+        letter-spacing: 2px;
+        transition: 0.4s ease;
+        cursor: pointer;
+    }
+
+    button:hover {
+        color: $color2;
+        background-color: $color1;
+    }
+}
+
+section {
+    .header-text {
+        margin: 0 auto;
+        padding: 45px 0;
+        max-width: 1100px;
+
+
+        p {
+            font-size: 1.2rem;
+            line-height: 34px;
+            text-align: center;
+        }
+    }
+
+    
+}
+
+
+.icon-part {
+    padding: 65px 0;
+    background-color: $color2;
+    @include CentrerElts();
+
+    .icon-part-container {
+        @include CentrerElts();
+        max-width: 1100px;
+
+        .list-icon-part{
+            text-align: center;
+        }
+
+        .lip-logo {
+            margin-bottom: 30px;
+
+        }
+
+        h3 {
+            font-size: 1.17rem;
+            color: $color1;
+        }
+        
+        p {
+            color: $color1;
+            text-align: center;
+            margin: 10px auto 20px;
+        }
+
+        button {
+            border: 1px solid $color1;
+            background: transparent;
+            color: $color1;
+            padding: 9px 32px;
+            transition: 0.4s ease;
+            cursor: pointer;
+        }
+
+        button:hover {
+            color: $color2;
+            background-color: $color1;
+        }
+    }
+}
