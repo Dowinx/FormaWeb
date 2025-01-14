@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #111111;
+}
+
+body:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #111111;
+  animation: animBefore 1.5s ease forwards;
+  animation-delay: 0.15s;
+}
+
+@keyframes animBefore {
+  100% {
+    opacity: 0;
+  }
+}
+body {
+  background: url(../img/bg.jpg) fixed center/cover;
+  color: #f3f3f3;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.btn {
+  background: none;
+  border: 2px solid #111111;
+  height: 45px;
+  width: 170px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  font-family: inter-bold, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+header {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+header .header-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+header .header-container h1 {
+  text-transform: uppercase;
+  font-family: inter-bold, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 6px;
+  color: #f3f3f3;
+}
+header .header-container p {
+  margin: 40px auto 60px;
+  font-style: italic;
+  width: 85%;
+  color: #f3f3f3;
+}
+header .header-container i {
+  border: 1px solid #f3f3f3;
+  border-radius: 50px;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav {
+  background: rgba(255, 255, 255, 0.253);
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  height: 65px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+header nav .left-part li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 15px;
+  font-size: 0.7rem;
+  list-style-type: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  color: #f3f3f3;
+}
+header nav .left-part li:first-child {
+  background-color: #f3f3f3;
+  color: #111111;
+}
+header nav .left-part li:hover {
+  background: #f3f3f3;
+  color: #111111;
+}
+header nav .right-part {
+  width: 25%;
+  max-width: 300px;
+  justify-content: space-around;
+  margin-right: 10px;
+}
+header nav .right-part li {
+  list-style-type: none;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+}
+header nav .right-part li:hover {
+  scale: 1.3;
+}
+
+main {
+  width: 85%;
+  margin: 0 auto 30px;
+  background: #f3f3f3;
+}
+main img {
+  width: 100%;
+}
+main .sect1 {
+  margin: 0 auto;
+  width: 80%;
+}
+main .sect1 .sect1-container span::before {
+  content: "";
+  height: 1px;
+  width: 37%;
+  position: absolute;
+  background: #d1d1d1;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+main .sect1 .sect1-container span {
+  width: 100%;
+  padding: 70px 0;
+  display: block;
+  text-align: center;
+  position: relative;
+}
+main .sect1 .sect1-container span::after {
+  content: "";
+  height: 1px;
+  width: 37%;
+  position: absolute;
+  background: #d1d1d1;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+main .sect1 .sect1-container h2 {
+  font-family: inter-bold, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+}
+main .sect1 .sect1-container p {
+  margin: 30px auto;
+  line-height: 35px;
+  font-style: italic;
+  font-size: 0.8rem;
+  width: 60%;
+  text-align: center;
+}
+main .sect1 .sect1-container .btn {
+  margin: 50px 0 90px;
+}/*# sourceMappingURL=style.css.map */
