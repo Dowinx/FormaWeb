@@ -144,6 +144,7 @@ main img {
 main .sect1 {
   margin: 0 auto;
   width: 80%;
+  text-align: center;
 }
 main .sect1 .sect1-container span::before {
   content: "";
@@ -189,4 +190,89 @@ main .sect1 .sect1-container p {
 }
 main .sect1 .sect1-container .btn {
   margin: 50px 0 90px;
+}
+main .sect2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  border-top: 1px solid #d1d1d1;
+}
+main .sect2 p {
+  margin: 30px 0;
+}
+main .sect2 h3 {
+  margin: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 28px;
+  font-family: inter-bold, sans-serif;
+}
+main .sect2 .left-part {
+  padding: 60px;
+  border-right: 1px solid #d1d1d1;
+}
+main .sect2 .right-part {
+  padding: 60px;
+}
+
+footer {
+  display: grid;
+  background: #e9e9e9;
+  width: 85%;
+  min-height: 640px;
+  margin: 0 auto 70px;
+  grid-template-columns: 50% 50%;
+}
+footer form {
+  gap: 18px;
+  display: grid;
+  grid-template-rows: 18px 45px 18px 45px 18px 200px 1fr;
+  border-right: 1px solid #d1d1d1;
+  padding: 60px 50px;
+  width: 100%;
+}
+footer form label {
+  color: dimgray;
+  text-transform: uppercase;
+  font-family: inter-bold, sans-serif;
+  font-size: 0.7rem;
+}
+footer form input {
+  border-radius: 4px;
+  display: flex;
+  width: 100%;
+}
+footer form textarea {
+  resize: none;
+  display: flex;
+  width: 100%;
+}
+footer .right-part {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+footer .right-part div {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  border-bottom: 1px solid #d1d1d1;
+  align-items: center;
+}
+footer .right-part div h3 {
+  padding-left: 40px;
+}
+footer .right-part .social ul {
+  display: flex;
+}
+footer .right-part .social ul li {
+  list-style-type: none;
+  margin-right: 12px;
+}
+footer .right-part .social ul li i {
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
