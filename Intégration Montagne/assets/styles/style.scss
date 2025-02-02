@@ -49,6 +49,10 @@ body {
         transition: 0.2s;
 }
 
+.btn:hover {
+    scale: 1.04;
+}
+
 header {
     min-height: 100vh;
     display: flex;
